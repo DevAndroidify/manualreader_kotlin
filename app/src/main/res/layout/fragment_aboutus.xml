@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutus">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="About Us:"
+                android:textColor="#B0F1B2"
+                android:textSize="40sp"
+                />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:textColor="#152837"
+               android:textStyle="italic"
+               android:textSize="20sp"
+               android:text="Welcome to our manual reader app! We're thrilled to have you on board as we embark on a journey to simplify the way you access and explore user manuals. Our app is designed to enhance your manual reading experience, making it effortless, efficient, and enjoyable.\n\t\t\t\tAt our core, we are passionate about empowering users to access information quickly and easily. We understand that user manuals can sometimes be dense, intimidating, and difficult to navigate. That's why we created this app, to revolutionize the way you interact with manuals and provide a seamless experience that puts the power of knowledge in your hands.
+               \n\t\t\t\t\tWith our manual reader app, you can say goodbye to flipping through endless pages and struggling to find the information you need. Our intuitive interface allows you to effortlessly browse through manuals, search for specific topics, and bookmark important sections for future reference. We've streamlined the process to ensure you can locate information within seconds, saving you valuable time and effort.
+\n\t\t\tFurthermore, our app is designed to be user-friendly and accessible to everyone. Whether you're a tech-savvy enthusiast or a beginner, our interface is intuitive and easy to navigate. We believe that knowledge should be accessible to all, and we strive to make our app inclusive and adaptable to different learning styles and abilities.
+\n\t\t\tThank you for choosing our manual reader app. We are honored to be a part of your journey toward mastering the devices and products that shape your world.
+"
+
+               />
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contact">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:text="Aim of the Manual Reader App:"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+               android:textColor="#152837"
+                android:textStyle="italic"
+
+                android:text="
+
+At our core, the aim of our manual reader app is to revolutionize the way users access and interact with user manuals, providing a seamless and enriching experience. Our app aims to:
+
+\n1. Simplify Access: We aim to make user manuals readily accessible to users anytime, anywhere, eliminating the need for physical copies or extensive searches. By providing a centralized platform for manual reading, we ensure easy access to crucial information at the users' fingertips.
+
+\n2. Enhance Efficiency: Our app aims to streamline the manual reading process, saving users valuable time and effort. With intuitive navigation, powerful search functionality, and bookmarking features, we empower users to locate specific information swiftly and efficiently, increasing productivity.
+
+\n3. Improve Comprehension: Understanding complex manuals can be challenging. Our app endeavors to enhance comprehension by incorporating interactive elements like diagrams, videos, and annotations. By presenting information in engaging formats, we aim to make manual reading more intuitive, interactive, and easier to grasp.
+
+\n4. Foster Sustainable Practices: By providing a digital platform for manual reading, we contribute to reducing paper consumption and minimizing deforestation. Our app encourages eco-friendly practices by offering a paperless alternative, supporting environmental conservation efforts.
+
+\n5. Promote Accessibility: We are committed to making manual reading accessible to users of all backgrounds and abilities. Our app strives to be inclusive, catering to different learning styles and ensuring that everyone can access and benefit from the wealth of information contained in user manuals.
+
+\n6. Continuous Improvement: We value user feedback and are dedicated to continuously improving our app based on their suggestions and emerging technologies. By staying at the forefront of innovation, we aim to provide the best possible manual reading experience and exceed user expectations.
+
+\nUltimately, our aim is to empower users with easy access to information, enhance their comprehension and efficiency, and contribute to sustainable practices through our manual reader app. We believe that by revolutionizing the manual reading experience, we can make a positive impact on individuals, industries, and the environment."
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

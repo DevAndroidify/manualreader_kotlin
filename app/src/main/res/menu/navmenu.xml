@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+<item android:id="@+id/home"
+    android:title="Home"
+    android:icon="@drawable/ic_baseline_home_24"/>
+    <item android:icon="@drawable/ic_baseline_camera_alt_24"
+        android:title="About Us"
+        android:id="@+id/aboutus"
+        />
+    <item android:icon="@drawable/aa"
+        android:title="Aim"
+        android:id="@+id/contact"
+        />
+    <item android:icon="@drawable/ic_baseline_upload_file_24"
+        android:title="Upload"
+        android:id="@+id/upload"
+        />
+    </group>
+</menu>
