@@ -4,10 +4,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DownloadManager;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -45,11 +48,8 @@ public class listview extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                putpdf putpdf=uploadedpdf.get(position);
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setType("application/pdf");
-                intent.setData(Uri.parse(putpdf.getUrl()));
-                startActivity(intent);
+                putpdf putpdf = uploadedpdf.get(position);
+                downloadPdf(getApplicationContext(), putpdf.getUrl());
             }
         });
       btn=findViewById(R.id.upload);
@@ -61,7 +61,19 @@ public class listview extends AppCompatActivity {
       });
 
     }
+    public static void downloadPdf(Context context, String pdfUrl) {
+        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(pdfUrl));
+        request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI | DownloadManager.Request.NETWORK_MOBILE);
+        request.setTitle("PDF Download");
+        request.setDescription("Downloading PDF");
+        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "filename.pdf");
 
+        DownloadManager downloadManager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
+        if (downloadManager != null) {
+            downloadManager.enqueue(request);
+        }
+    }
     private void retrievepdffiles() {
         databaseReference= FirebaseDatabase.getInstance().getReference(selected);
         databaseReference.addValueEventListener(new ValueEventListener() {

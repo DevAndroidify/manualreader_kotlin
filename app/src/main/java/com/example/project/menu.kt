@@ -22,7 +22,6 @@ class menu : AppCompatActivity() {
         toggle= ActionBarDrawerToggle(this,drawerlayout,R.string.open,R.string.close)
         drawerlayout.addDrawerListener(toggle)
         toggle.syncState()
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         replacefragment(home(),"Home")
         navview.setNavigationItemSelectedListener {
             it.isChecked=true
